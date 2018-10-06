@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         var person1 = Person(name: "Absalon")
         let arr = [1, 2, 3, 4, 5, 6, 6, 4, 3, 102, 1, 2, -32, 5]
         print(findMinMax(arr: arr))
+        
+        let stringArr = ["Morgan Freeman", "Christian Bale", "Ewan McGregor"]
+        print(getBestActor(stringArr))
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,6 +55,10 @@ class ViewController: UIViewController {
             }
         }
         return (currentMin, currentMax)
+    }
+   
+    func getBestActor(_ actors : [String]) -> String {
+        return actors.contains("Ewan McGregor") == true ? "Ewan my boi" : "None of these fools"
     }
 }
 
