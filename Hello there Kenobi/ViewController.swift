@@ -25,6 +25,10 @@ class ViewController: UIViewController {
         let stringArr = ["Morgan Freeman", "Christian Bale", "Ewan McGregor"]
         print(getBestActor(stringArr))
         
+        //closures
+        let a = Closures().findMinInArray(array : [2,5,3,8,1], min : {(a, b) in return a < b ? a : b})
+        print(a)
+        
     }
 
     override func didReceiveMemoryWarning() {
